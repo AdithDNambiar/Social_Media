@@ -1,0 +1,36 @@
+.chatPage{
+padding:30px;
+background:#f4f6fb;
+min-height:100vh;
+}
+
+.chatBox{
+background:white;
+border-radius:12px;
+border:1px solid #e5e7eb;
+height:420px;
+padding:15px;
+margin-bottom:10px;
+overflow-y:auto;
+}
+
+.chatMessage{
+margin-bottom:10px;
+}
+
+.chatInput input{
+width:70%;
+padding:8px;
+border-radius:6px;
+border:1px solid #d1d5db;
+}
+
+.chatInput button{
+padding:8px 12px;
+margin-left:5px;
+background:#2563eb;
+color:white;
+border:none;
+border-radius:6px;
+cursor:pointer;
+}

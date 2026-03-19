@@ -1,0 +1,53 @@
+/* GLOBAL APP LAYOUT */
+
+.appLayout{
+display:flex;
+}
+
+/* MAIN PAGE CONTENT */
+
+.pageContent{
+margin-left:100px;
+flex:1;
+min-height:100vh;
+background-size:300px;
+background-color: rgb(255, 255, 255);
+background-repeat: repeat;
+background-image: url("./assets/bg.png");
+padding:30px;
+display:flex;
+justify-content:center;
+}
+
+/* FEED WIDTH (Twitter Style) */
+
+.feedContainer{
+width:100%;
+max-width:650px;
+}
+
+/* RIGHT PANEL */
+
+.rightPanel{
+width:280px;
+margin-left:40px;
+}
+
+/* MOBILE */
+
+@media (max-width:900px){
+
+.pageContent{
+margin-left:70px;
+padding:20px;
+}
+
+.rightPanel{
+display:none;
+}
+
+.feedContainer{
+max-width:100%;
+}
+
+}

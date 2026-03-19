@@ -1,0 +1,36 @@
+.notificationsPage{
+display:flex;
+background-size:300px;
+background-repeat: repeat;
+background-image: url("../assets/bg.png");
+background-color: black;
+
+}
+
+.notificationsMain{
+flex:1;
+padding:30px;
+margin-left:240px;
+}
+
+.notificationCard{
+display:flex;
+align-items:center;
+gap:15px;
+background:white;
+padding:15px;
+border-radius:10px;
+margin-bottom:15px;
+cursor:pointer;
+box-shadow:0 2px 8px rgba(0,0,0,0.08);
+}
+
+.notificationCard img{
+width:40px;
+height:40px;
+border-radius:50%;
+}
+
+.notificationCard:hover{
+background:#f3f3f3;
+}

@@ -1,0 +1,140 @@
+{
+    font-family: 'ITC Bauhaus Pro';
+}
+
+.registerPage{
+display:flex;
+height:100vh;
+font-family: 'ITC Bauhaus Pro';;
+}
+
+/* LEFT SIDE */
+
+.registerLeft{
+flex:1;
+background:#f6f8fc;
+padding:60px;
+display:flex;
+flex-direction:column;
+justify-content:center;
+}
+
+.logo{
+font-size:24px;
+font-weight:600;
+margin-bottom:30px;
+}
+
+.welcomeText{
+font-size:36px;
+font-weight:600;
+margin-bottom:40px;
+ font-family: 'ITC Bauhaus Pro';
+}
+
+.registerImage{
+width:380px;
+}
+
+/* RIGHT SIDE */
+
+.registerRight{
+flex:1;
+background:white;
+display:flex;
+justify-content:center;
+align-items:center;
+ font-family: 'ITC Bauhaus Pro';
+}
+
+.registerForm{
+width:600px;
+ font-family: 'ITC Bauhaus Pro';
+}
+
+/* HEADINGS */
+
+.registerForm h3{
+margin-top:20px;
+margin-bottom:10px;
+ font-family: 'ITC Bauhaus Pro';
+}
+
+/* ROW INPUTS */
+
+.row{
+display:flex;
+gap:10px;
+margin-bottom:15px;
+}
+
+.row input{
+flex:1;
+padding:12px;
+border-radius:8px;
+border:1px solid #ddd;
+}
+
+/* BIO */
+
+textarea{
+width:100%;
+padding:12px;
+border-radius:8px;
+border:1px solid #ddd;
+resize:none;
+height:60px;
+}
+
+/* INTERESTS */
+
+.interestInput{
+width:100%;
+padding:12px;
+border-radius:8px;
+border:1px solid #ddd;
+margin-top:10px;
+ font-family: 'ITC Bauhaus Pro';
+}
+
+/* BUTTONS */
+
+.buttonRow{
+display:flex;
+gap:15px;
+margin-top:20px;
+}
+
+.createBtn{
+flex:1;
+padding:12px;
+border:none;
+border-radius:8px;
+color:white;
+font-size:16px;
+cursor:pointer;
+background:linear-gradient(90deg,#2563eb,#1d4ed8);
+ font-family: 'ITC Bauhaus Pro';
+}
+
+.draftBtn{
+padding:12px 20px;
+border-radius:8px;
+border:1px solid #ccc;
+background:white;
+cursor:pointer;
+}
+
+/* LOGIN LINK */
+
+.loginLink{
+margin-top:25px;
+font-size:14px;
+}
+
+.loginLink span{
+color:#2563eb;
+cursor:pointer;
+margin-left:5px;
+font-weight:500;
+}

@@ -1,0 +1,176 @@
+/* LAYOUT */
+
+.messagesLayout{
+  display:flex;
+  background-size:300px;
+background-repeat: repeat;
+background-image: url("../assets/bg.png");
+background-color: black;
+
+}
+
+.messagesContainer{
+  margin-left:100px;
+  display:flex;
+  width:100%;
+  height:100vh;
+  background:#f0f2f5;
+}
+
+
+/* USERS LIST */
+
+.chatUsers{
+  width:300px;
+  background:white;
+  border-right:1px solid #e5e7eb;
+  padding:20px;
+  overflow-y:auto;
+}
+
+.chatUsers h3{
+  margin-bottom:15px;
+}
+
+.chatUser{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  padding:10px;
+  cursor:pointer;
+  border-radius:10px;
+  transition:0.2s;
+}
+
+.chatUser:hover{
+  background:#f0f2f5;
+}
+
+/* 🔥 ACTIVE USER */
+
+.chatUser.active{
+  background:#e7f3ff;
+  border-left:4px solid #1877f2;
+}
+
+.chatUser img{
+  width:42px;
+  height:42px;
+  border-radius:50%;
+  object-fit:cover;
+}
+
+
+/* CHAT WINDOW */
+
+.chatWindow{
+  flex:1;
+  display:flex;
+  flex-direction:column;
+  background-size:300px;
+background-repeat: repeat;
+background-image: url("../assets/bg.png");
+}
+
+
+/* 🔥 CHAT HEADER */
+
+.chatHeader{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  padding:12px 15px;
+  background:white;
+  border-bottom:1px solid #e5e7eb;
+}
+
+.chatHeader img{
+  width:38px;
+  height:38px;
+  border-radius:50%;
+  object-fit:cover;
+}
+
+.chatHeader span{
+  font-weight:600;
+  font-size:15px;
+}
+
+
+/* MESSAGES */
+
+.chatMessages{
+  flex:1;
+  padding:20px;
+  overflow-y:auto;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+
+/* MY MESSAGE */
+
+.myMsg{
+  align-self:flex-end;
+  background:#1877f2;
+  color:white;
+  padding:10px 15px;
+  border-radius:18px;
+  max-width:300px;
+}
+
+/* THEIR MESSAGE */
+
+.theirMsg{
+  align-self:flex-start;
+  background:#e4e6eb;
+  padding:10px 15px;
+  border-radius:18px;
+  max-width:300px;
+}
+
+
+/* INPUT */
+
+.chatInput{
+  display:flex;
+  padding:12px;
+  border-top:1px solid #e5e7eb;
+  background:white;
+}
+
+.chatInput input{
+  flex:1;
+  padding:10px 15px;
+  border-radius:25px;
+  border:none;
+  background:#f0f2f5;
+  outline:none;
+}
+
+.chatInput button{
+  margin-left:10px;
+  padding:10px 20px;
+  background:#1877f2;
+  color:white;
+  border:none;
+  border-radius:25px;
+  cursor:pointer;
+  transition:0.2s;
+}
+
+.chatInput button:hover{
+  background:#166fe5;
+}
+
+
+/* EMPTY STATE */
+
+.noChat{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  height:100%;
+  color:#888;
+  font-size:16px;
+}

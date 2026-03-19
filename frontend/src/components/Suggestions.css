@@ -1,0 +1,26 @@
+.suggestions{
+width:260px;
+background:white;
+border-left:1px solid #e5e7eb;
+padding:25px;
+}
+
+.suggestions h3{
+margin-bottom:15px;
+}
+
+.suggestionUser{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:12px;
+}
+
+.suggestionUser button{
+background:#2563eb;
+color:white;
+border:none;
+padding:5px 10px;
+border-radius:6px;
+cursor:pointer;
+}

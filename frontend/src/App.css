@@ -1,0 +1,43 @@
+body{
+margin:0;
+font-family:Arial, Helvetica, sans-serif;
+background:#f0f2f5;
+}
+
+.sidebar{
+width:220px;
+height:100vh;
+background:white;
+padding:20px;
+border-right:1px solid #ddd;
+}
+
+.sidebar h2{
+margin-bottom:20px;
+}
+
+.sidebar p{
+cursor:pointer;
+margin:10px 0;
+}
+
+.feed{
+flex:1;
+padding:20px;
+}
+
+.post{
+background:white;
+padding:15px;
+border-radius:8px;
+margin-bottom:15px;
+}
+
+button{
+padding:6px 10px;
+cursor:pointer;
+}
+
+input{
+padding:8px;
+}

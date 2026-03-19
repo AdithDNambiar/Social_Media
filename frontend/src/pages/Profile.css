@@ -1,0 +1,196 @@
+.profilePage{
+display:flex;
+min-height:100vh;
+background-size:300px;
+background-repeat: repeat;
+background-image: url("../assets/bg.png");
+background-color: black;
+
+}
+
+/* prevents hiding under sidebar */
+
+.profileMain{
+flex:1;
+padding:40px;
+margin-left:220px;
+}
+
+/* header card */
+
+.profileHeader{
+background:white;
+border-radius:16px;
+padding:40px;
+display:flex;
+align-items:center;
+gap:30px;
+box-shadow:0 4px 20px rgba(0,0,0,0.06);
+max-width:1300px;
+}
+
+/* profile image */
+
+.profileImage{
+width:120px;
+height:120px;
+border-radius:50%;
+object-fit:cover;
+border:4px solid white;
+box-shadow:0 2px 10px rgba(0,0,0,0.15);
+}
+
+/* info section */
+
+.profileInfo h2{
+margin:0;
+font-size:26px;
+}
+
+.profileEmail{
+color:#666;
+margin-top:5px;
+font-size:14px;
+}
+
+.profileBio{
+margin-top:10px;
+font-size:15px;
+line-height:1.5;
+}
+
+/* edit button */
+
+.editBtn{
+margin-top:15px;
+background:#1877f2;
+color:white;
+border:none;
+padding:10px 18px;
+border-radius:8px;
+cursor:pointer;
+font-weight:500;
+}
+
+.editBtn:hover{
+background:#0f5ed7;
+}
+
+.profilePosts{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:15px;
+margin-top:30px;
+}
+
+.profilePost{
+background:white;
+padding:15px;
+border-radius:10px;
+box-shadow:0 2px 10px rgba(0,0,0,0.08);
+position:relative;
+}
+
+.profilePostImage{
+width:100%;
+border-radius:8px;
+margin-top:10px;
+}
+
+.postTop{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:10px;
+}
+
+.postTime{
+font-size:12px;
+color:gray;
+}
+
+.postMenu button{
+background:none;
+border:none;
+cursor:pointer;
+font-size:16px;
+margin-left:5px;
+}
+
+/* EDIT POPUP */
+
+.editPopup{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.4);
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.editBox{
+background:white;
+padding:20px;
+border-radius:10px;
+width:400px;
+}
+
+.editBox textarea{
+width: 370px;
+height:100px;
+margin-top:10px;
+}
+
+.editActions{
+margin-top:10px;
+display:flex;
+justify-content:flex-end;
+gap:10px;
+}
+
+
+.postMenu button{
+  border:none;
+  background:#f8fafc;
+  padding:8px;
+  border-radius:50%;
+  cursor:pointer;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  transition:0.2s;
+}
+
+/* ICON SIZE */
+.postMenu svg{
+  font-size:16px;
+  color:#374151;
+}
+
+/* HOVER EFFECTS */
+.postMenu button:hover{
+  background:#e5e7eb;
+}
+
+/* DELETE HOVER (red feel) */
+.postMenu button:last-child:hover{
+  background:#fee2e2;
+}
+
+.postMenu button:last-child:hover svg{
+  color:#dc2626;
+}
+
+.postRight{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.postTime{
+    font-size: 12px;
+    color: #9ca3af;
+}
