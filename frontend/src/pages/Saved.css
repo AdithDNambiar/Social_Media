@@ -1,6 +1,6 @@
 .savedPage{
   display:flex;
-  background-color: black;
+  background-color: rgb(255, 255, 255);
 
 min-height:100vh;
 background-size:300px;
@@ -10,10 +10,8 @@ background-image: url("../assets/bg.png");
 }
 
 .savedContent{
-  margin-left:240px;
-  padding:30px;
-  width:100%;
-}
+  padding:20px;
+flex: 1;}
 
 .savedTitle{
   font-size:24px;

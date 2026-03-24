@@ -3,8 +3,13 @@ import Sidebar from "../components/Sidebar";
 import axios from "axios";
 import "./Notifications.css";
 import "../Layout.css";
+import { useNavigate, useLocation } from "react-router-dom";
+
 
 function Notifications(){
+
+    const navigate = useNavigate();
+
 
 const user = JSON.parse(localStorage.getItem("user"));
 
@@ -53,7 +58,7 @@ return(
 <div
 key={n._id}
 className="notificationCard"
-onClick={()=>openPost(n.post?._id)}
+onClick={()=>navigate("/home")}
 >
 
 <img

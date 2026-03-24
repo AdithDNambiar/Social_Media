@@ -22,13 +22,30 @@ const [selectedStory,setSelectedStory] = useState(null);
   window.location.href = "/profile/" + id;
 };
   
-  const openStory = async (user) => {
+  const openStory = async (u) => {
 
-  const res = await axios.get(
-    "http://localhost:3000/stories/"+user._id
-  );
+  console.log("CLICKED USER:", u);
 
-  setSelectedStory(res.data);
+  try{
+
+    await axios.post(
+      "http://localhost:3000/stories/view/" + u._id,
+      { viewerId: user._id }
+    );
+
+    const res = await axios.get(
+      "http://localhost:3000/stories/" + u._id
+    );
+
+    console.log("STORY RESPONSE:", res.data);
+
+    setSelectedStory(res.data[0]);
+
+    loadUsers();
+
+  }catch(err){
+    console.log("ERROR FULL:", err.response);
+  }
 
 };
 
@@ -67,7 +84,7 @@ const postStory = async () => {
   // LOAD USERS
   const loadUsers = async () => {
 
-    const res = await axios.get("http://localhost:3000/users");
+    const res = await axios.get("http://localhost:3000/users?userId="+ user._id);
 
     setUsers(res.data);
 
@@ -125,9 +142,9 @@ return(
     onClick={()=>openStory(user)}
   >
     <img
-      className="storyCircle"
-      src={user.profilePic || "https://i.imgur.com/HeIi0wU.png"}
-    />
+  className="storyCircle"
+  src={user.profilePic || "https://i.imgur.com/HeIi0wU.png"}
+/>
     <span className="storyName">You</span>
   </div>
 
@@ -143,9 +160,13 @@ return(
         onClick={()=>openStory(u)}
       >
         <img
-          className="storyCircle"
-          src={u.profilePic || "https://i.imgur.com/HeIi0wU.png"}
-        />
+  className={`storyCircle 
+    ${!u.hasStory ? "noStory" : ""}
+    ${u.hasStory && !u.storySeen ? "unseenStory" : ""}
+    ${u.hasStory && u.storySeen ? "seenStory" : ""}
+  `}
+  src={u.profilePic || "https://i.imgur.com/HeIi0wU.png"}
+/>
         <span className="storyName">{u.name}</span>
       </div>
     );

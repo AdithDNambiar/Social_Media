@@ -138,3 +138,24 @@ cursor:pointer;
 margin-left:5px;
 font-weight:500;
 }
+
+@media (max-width:900px){
+
+  .registerPage{
+    flex-direction:column;
+  }
+
+  .registerLeft{
+    display:none;
+  }
+
+  .registerRight{
+    flex:1;
+    padding:20px;
+  }
+
+  .registerForm{
+    width:100%;
+  }
+
+}

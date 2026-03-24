@@ -13,7 +13,8 @@ z-index:9999;
 
 .commentBox{
 background:#ffffff;
-width:420px;
+width:90%;
+max-width:420px;
 max-height:500px;
 border-radius:14px;
 display:flex;

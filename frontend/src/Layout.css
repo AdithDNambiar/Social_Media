@@ -1,53 +1,77 @@
 /* GLOBAL APP LAYOUT */
 
+*{
+    box-sizing: border-box;
+}
+
+body, html{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
 .appLayout{
-display:flex;
+  display:flex;
+  width:100%;
+  min-height:100vh;
+}
+
+/* SIDEBAR (ASSUMING FIXED WIDTH) */
+.sidebar{
+    position: sticky;
+    top: 0;
+    height: 100vh;
+  width:100px;
+  flex-shrink:0;
 }
 
 /* MAIN PAGE CONTENT */
 
 .pageContent{
-margin-left:100px;
-flex:1;
-min-height:100vh;
-background-size:300px;
-background-color: rgb(255, 255, 255);
-background-repeat: repeat;
-background-image: url("./assets/bg.png");
-padding:30px;
-display:flex;
-justify-content:center;
+  flex:1;
+  min-height:100vh;
+  background-size:300px;
+  background-color:white;
+  background-repeat: repeat;
+  background-image: url("./assets/bg.png");
+  padding:30px;
+  display:flex;
+  justify-content:center;
 }
 
-/* FEED WIDTH (Twitter Style) */
+/* FEED WIDTH */
 
 .feedContainer{
-width:100%;
-max-width:650px;
+  width:100%;
+  max-width:650px;
 }
 
 /* RIGHT PANEL */
 
 .rightPanel{
-width:280px;
-margin-left:40px;
+  width:280px;
+  margin-left:40px;
+  flex-shrink:0;
 }
 
-/* MOBILE */
+/* 📱 MOBILE */
 
 @media (max-width:900px){
 
-.pageContent{
-margin-left:70px;
-padding:20px;
-}
+  .sidebar{
+    width:60px; /* shrink sidebar instead of pushing content */
+  }
 
-.rightPanel{
-display:none;
-}
+  .pageContent{
+    padding:10px;
+  }
 
-.feedContainer{
-max-width:100%;
-}
+  .rightPanel{
+    display:none;
+  }
+
+  .feedContainer{
+    max-width:100%;
+  }
 
 }
